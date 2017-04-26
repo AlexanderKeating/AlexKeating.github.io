@@ -6,6 +6,12 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
      <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+     <link href="lib/jquery.bxslider.css" rel="stylesheet" />
+     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+     <script src="js/jquery.bxslider.min.js"></script>
+    
+
+     
      <title>Alexander Keating - Schooling</title>
 </head>
 <body>     
@@ -32,14 +38,35 @@
                <p class="schooling">Engineering Graphics</p>
                <p class="schooling">iPro</p>
                <p class="schooling"> Java</p>
+          <p class ="schoolTitle">Dolly</p>
+               <p class="schooling">I also wanted to include photos of my adorable Boxer Dolly!</p>
+          <div class="divBox">
+               <ul class="bxslider">
+                    <li><img src="images/DollyPup.jpg" width="400" alt="Dolly Pup"></li>
+                    <li><img src="images/DollyOne.jpg" width="400" alt="Dolly chillen"></li>
+                    <li><img src="images/DollyTwo.jpg" width="400" alt=Dolly still chillen"></li>
+               </ul>
+          </div>
      </div>
+ 
      
+     <script>
+          $(document).ready(function(){
+  $('.bxslider').bxSlider({
+        slideWidth: 400,
+        minSlides: 1,
+        maxSlides: 1,
+        moveSlides: 1,
+        infiniteLoop: true
+        });
+});
+     </script>
      <footer>
           <p>Contact me!</p>
           <a href="mailto:akeating1605@gmail.com" title = "email"><i class="glyphicon glyphicon-envelope"></i></a>
           &#124
           <a href ="https://www.linkedin.com/in/alexander-keating-272961129"><i class="glyphicon glyphicon-user"></i></a>       
-     </footer>
-          
+     </footer>   
 </body>
+   
 </html>
